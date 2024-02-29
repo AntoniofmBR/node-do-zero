@@ -1,0 +1,27 @@
+POST http://localhost:1212/videos
+Content-type: application/json
+
+{
+  "title": "Vídeo node",
+  "description": "Esse é o primeiro vídeo.",
+  "duration": 180
+}
+
+###
+
+GET http://localhost:1212/videos
+
+###
+
+PUT http://localhost:1212/videos/551a62c2-df66-44d8-8ac4-0bcdfdab831e
+Content-type: application/json
+
+{
+  "title": "Vídeo node 02",
+  "description": "Esse é o vídeo dois do node",
+  "duration": 180
+}
+
+###
+
+DELETE  http://localhost:1212/videos/551a62c2-df66-44d8-8ac4-0bcdfdab831e
